@@ -1,26 +1,96 @@
 /*font-family: 'Gentium Book Basic', serif;
-font-family: 'Covered By Your Grace', cursive;*/
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Caveat Brush', cursive; */
 
 body {
   font-family: sans-serif;
+  background-color: #E2E2D5;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+  display: flex;
 }
 
 .main {
   border-radius: 50px;
-  float: left;
-  margin: 20px 40px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: #077187 solid 3px;
+}
+
+.nav {
+  margin-bottom: 20px;
+  overflow: auto;
 }
 
 .nav a {
-  color: #4499dd;
+  color: #077187;
   text-decoration: none;
   margin-left: 15px;
-  font-size: 20px;
+  margin-right: 15px;
 }
 
-h2 {
-  font-family: 'Covered By Your Grace', cursive;
-  color: #335533;
+.box-left {
+  float: left;
+  width: 55%;
+  border: 2px black solid;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.box-right {
+  float: left;
+  width: 40%;
+  border: 2px black solid;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-top: 50px;
+  display: flex;
+  overflow: auto;
+}
+
+table {
+  border: #4D6C43 1px solid;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #302747;
+  color: ivory;
+  padding: 10px;
+  display: flex;
+  border-collapse: collapse;
+}
+
+.splash {
+  position: relative;
+  text-align: right;
+  left: 220px;
+  top: 30px;
+  width: 400px;
+  height: 200px;
+  font-family: 'Caveat Brush', cursive;
+  color: #074F57;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 80px;
+  line-height: 1em;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  border-top: #074F57;
+  border-top-style: groove;
+  overflow: auto;
 }
