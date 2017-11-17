@@ -1,24 +1,24 @@
 body {
   font-family: sans-serif;
-  background: #7EBDE1; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#7EBDE1, #3E8CCB); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#7EBDE1, #3E8CCB); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#7EBDE1, #3E8CCB); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#7EBDE1, #3E8CCB); /* Standard syntax (must be last) */
+  background: #88bbdd; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#88bbdd, #2D6A8C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#88bbdd, #2D6A8C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#88bbdd, #2D6A8C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#88bbdd, #2D6A8C); /* Standard syntax (must be last) */
 }
 
 .main {
-  border-radius: 50px;
+  border-radius: 30px;
   position: absolute;
-  top: 100px;
+  top: 130px;
   left: 100px;
   border: #077187 solid 3px;
 }
 
 .splash {
-  position: relative;
+  position: absolute;
   left: 15px;
-  top: -30px;
+  top: 30px;
   width: 500px;
   height: 200px;
   font-family: 'Caveat', cursive;
@@ -32,7 +32,7 @@ h2 {
   font-family: 'Caveat Brush', cursive;
   color: #0f594e;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -46,22 +46,26 @@ h3 {
 .top {
   display: inline-flex;
   box-sizing: border-box;
-
 }
 
-.top:after {
+li {
+  display: inline;
+}
+
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
 .nav {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 20px;
   float: right;
   overflow: auto;
   font-size: 15px;
   font-weight: bold;
+  display: block;
 }
 
 .nav a {
@@ -69,21 +73,16 @@ h3 {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 15px;
-
 }
 
 .left {
-  display: flex;
   float: left;
   width: 45%;
   box-sizing: border-box;
 }
 
-
-
 .right {
   float: right;
-  overflow: auto;
   width: 55%;
   box-sizing: border-box;
   padding: 10px;
@@ -92,8 +91,6 @@ h3 {
 .bottom {
   display: flex;
   width: 100%;
-  border-top: #074F57;
-  border-top-style: groove;
   overflow: auto;
   box-sizing: border-box;
 }
@@ -115,6 +112,8 @@ th {
 
 td {
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 tr:nth-child(odd) {
@@ -124,9 +123,12 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: #7EBDE1;
 }
+
 .bottom {
-  display: flex;
-  flex-direction: row;
+  padding-top: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+
 }
 
 .bottom img {
@@ -136,4 +138,60 @@ tr:nth-child(even) {
   background-color: #D0C8B8;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  background-color: #335533;
+  height: auto;
+  text-align: center;
+  color: ivory;
+  margin-top: 15px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #7EBDE1;
+    color: #0E191F;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.button a {
+    position: relative;
+    top: 525px;
+    left: 200px;
+    background-color: #4CAF50;
+    font-family: 'Caveat Brush', cursive;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
