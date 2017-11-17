@@ -1,0 +1,26 @@
+/*font-family: 'Gentium Book Basic', serif;
+font-family: 'Covered By Your Grace', cursive;*/
+
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  border-radius: 50px;
+  float: left;
+  margin: 20px 40px 20px 20px;
+}
+
+.nav a {
+  color: #4499dd;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'Covered By Your Grace', cursive;
+  color: #335533;
+  font-weight: 300;
+  font-size: 50px;
+}
