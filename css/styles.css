@@ -1,10 +1,10 @@
 body {
   font-family: sans-serif;
-  background: #88bbdd; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#88bbdd, #2D6A8C); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#88bbdd, #2D6A8C); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#88bbdd, #2D6A8C); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#88bbdd, #2D6A8C); /* Standard syntax (must be last) */
+  background: #88bbdd;
+  background: -webkit-linear-gradient(#88bbdd, #2D6A8C);
+  background: -o-linear-gradient(#88bbdd, #2D6A8C);
+  background: -moz-linear-gradient(#88bbdd, #2D6A8C);
+  background: linear-gradient(#88bbdd, #2D6A8C);
 }
 
 .main {
@@ -128,7 +128,6 @@ tr:nth-child(even) {
   padding-top: 30px;
   display: inline-flex;
   justify-content: space-between;
-
 }
 
 .bottom img {
@@ -165,7 +164,6 @@ tr:nth-child(even) {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
     position: absolute;
     z-index: 1;
 }
@@ -188,7 +186,7 @@ tr:nth-child(even) {
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
